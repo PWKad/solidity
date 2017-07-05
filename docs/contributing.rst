@@ -78,10 +78,10 @@ Alternatively, there is a testing script at ``scripts/test.sh`` which executes a
 Whiskers
 ========
 
-*Whiskers* is a templating system similar to `Moustache <https://mustache.github.io>`_. It is used by the
+*Whiskers* is a templating system similar to `Mustache <https://mustache.github.io>`_. It is used by the
 compiler in various places to aid readability, and thus maintainability and verifiability, of the code.
 
-The syntax comes with a substantial difference to Moustache: the template markers ``{{`` and ``}}`` are
+The syntax comes with a substantial difference to Mustache: the template markers ``{{`` and ``}}`` are
 replaced by ``<`` and ``>`` in order to aid parsing and avoid conflicts with :ref:`inline-assembly`
 (The symbols ``<`` and ``>`` are invalid in inline assembly, while ``{`` and ``}`` are used to delimit blocks).
 Another limitation is that lists are only resolved one depth and they will not recurse. This may change in the future.
